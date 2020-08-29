@@ -1,0 +1,8 @@
+name: 'Ghost Issues Notifier'
+branding:
+  color: 'yellow'
+  icon: 'alert-circle'
+description: 'Automatically label and mention/notify users about stuck issues.'
+runs:
+  main: 'dist/index.js'
+  using: 'node12'

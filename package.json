@@ -1,0 +1,33 @@
+{
+  "name": "ghost-issues-notifier-actions",
+  "version": "0.1.0",
+  "description": "GitHub Action which reminds project maintainer of ghost issues - issues which are buried deep within and are really useful for project by some duplicate issues",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/harsh-2711/ghost-issues-notifier-actions.git"
+  },
+  "author": "Harsh Patel",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/harsh-2711/ghost-issues-notifier-actions/issues"
+  },
+  "homepage": "https://github.com/harsh-2711/ghost-issues-notifier-actions#readme",
+  "devDependencies": {
+    "@types/ms": "^0.7.31",
+    "@types/node": "^14.6.2",
+    "@zeit/ncc": "^0.22.3",
+    "cspell": "^4.1.0",
+    "prettier": "^2.1.1",
+    "prettier-plugin-packagejson": "^2.2.5",
+    "typescript": "^4.0.2"
+  },
+  "dependencies": {
+    "@actions/core": "^1.2.5",
+    "@actions/github": "^4.0.0",
+    "ms": "^2.1.2"
+  }
+}

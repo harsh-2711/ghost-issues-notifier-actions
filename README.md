@@ -66,7 +66,7 @@ The default label this action uses is "stuck", but you can use any label.
       <td>
         Search query to pass to the pull request search.<br/><br />
         The value provided will be appended to the base search query, which looks something like this:<br />
-        "repo:${GITHUB_REPOSITORY} is:pr is:open created:<=${createdSinceCutOff} -label:${stuckLabel}"
+        "repo:${GITHUB_REPOSITORY} is:issue is:open created:<=${createdSinceCutOff} -label:${stuckLabel}"
       </td>
     </tr>
   </tbody>

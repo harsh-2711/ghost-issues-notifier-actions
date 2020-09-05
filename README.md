@@ -12,7 +12,7 @@ Pairs very well with the [Stuck Pull Request Notifier action by Jeremy Rylan](ht
 
 ### Pre-requisites
 
-Create a label in your repo to assign to ghost(pushed back in stack because of unnecessary duplication of issues) issues
+Create a label in your repo to assign to ghost(pushed back in stack because of unnecessary duplication of issues) issues.
 
 The default label this action uses is "stuck", but you can use any label.
 

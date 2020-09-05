@@ -85,7 +85,7 @@ jobs:
   stuck-prs:
     runs-on: ubuntu-latest
     steps:
-      - uses: jrylan/github-action-stuck-pr-notifier@main
+      - uses: harsh-2711/ghost-issues-notifier-actions@main
         with:
           repo-token: ${{ secrets.GITHUB_TOKEN }}
           message: 'Hey @yourUsername, this issue appears to be stuck.'

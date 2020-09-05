@@ -14,7 +14,7 @@ Pairs very well with the [Stuck Pull Request Notifier action by Jeremy Rylan](ht
 
 Create a label in your repo to assign to ghost(pushed back in stack because of unnecessary duplication of issues) issues.
 
-The default label this action uses is "stuck", but you can use any label.
+The default label this action uses is **stuck**, but you can use any label.
 
 **NOTE: The label must be setup before using this action**
 

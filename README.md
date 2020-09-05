@@ -12,15 +12,15 @@ Pairs very well with the [Stuck Pull Request Notifier action by Jeremy Rylan](ht
 
 ### Pre-requisites
 
-Create a label in your repo to assign to stuck pull requests.
+Create a label in your repo to assign to ghost(pushed back in stack because of unnecessary duplication of issues) issues
 
 The default label this action uses is "stuck", but you can use any label.
 
-**!!! The label must be setup before using this action. !!!**
+**NOTE: The label must be setup before using this action**
 
 ### Inputs
 
-:heavy_exclamation_mark: = Required
+✳️ = Required
 
 <table>
   <thead>
@@ -33,7 +33,7 @@ The default label this action uses is "stuck", but you can use any label.
   </thead>
   <tbody>
     <tr>
-      <td>:heavy_exclamation_mark:</td>
+      <td>✳️</td>
       <td>repo-token</td>
       <td>&nbsp;</td>
       <td>Input for `secrets.GITHUB_TOKEN`.</td>
@@ -49,24 +49,26 @@ The default label this action uses is "stuck", but you can use any label.
       <td>label</td>
       <td>stuck</td>
       <td>
-        Name of the label to assign to stuck pull requests.<br /><br />
+        Name of the label to assign to ghost issues.<br /><br />
         <strong>The supplied label must already exist. This action will not create a new label.</strong>
       </td>
     </tr>
     <tr>
-      <td>:heavy_exclamation_mark:</td>
+      <td>✳️</td>
       <td>message</td>
       <td>&nbsp;</td>
-      <td>The comment message to post on the pull request to notify a user.</td>
+      <td>The comment message to post on the issues to notify a user.</td>
     </tr>
     <tr>
-      <td>:heavy_exclamation_mark:</td>
+      <td>✳️</td>
       <td>search-query</td>
       <td>&nbsp;</td>
       <td>
-        Search query to pass to the pull request search.<br/><br />
+        Search query to pass to the issue search.<br/><br />
         The value provided will be appended to the base search query, which looks something like this:<br />
-        "repo:${GITHUB_REPOSITORY} is:issue is:open created:<=${createdSinceCutOff} -label:${stuckLabel}"
+        <pre lang="javascript">
+        repo:${GITHUB_REPOSITORY} is:issue is:open created:<=${createdSinceCutOff} -label:${stuckLabel}
+        </pre>
       </td>
     </tr>
   </tbody>
